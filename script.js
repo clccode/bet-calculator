@@ -30,7 +30,7 @@ document.getElementById('payout-btn').addEventListener('click', () => {
         const oddsMultiplier = Math.abs(odds/100)
         let prob = Math.abs(odds)/(Math.abs(odds) + 100)
         prob = Number(prob * 100).toFixed(2)
-        const profit = stake * oddsMultiplier
+        const profit = stake / oddsMultiplier
         const total = Number(stake + profit).toFixed(2)
         document.getElementById('payout').textContent =
          `The implied probability of winning the bet is ${prob}% and the potential payout is $${total}💵`
