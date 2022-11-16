@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bet Calculator</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Betting Calculator</h1>
+        </header>
+
+        <h3>A tool to calculate your <u>potential</u> winnings. 
+            Don't forget: <em>betting is always a risk!</em></h3>
+
+        <!-- Bet & Odds Sections -->
+        <div class="bet-odds">
+            
+            <section class="odds">
+                <h3>What are the odds? (American odds, i.e. -150 or +150)</h3>
+                <input class="input" id="odds-amt" type="number" placeholder="0">
+            </section>
+
+            <section class="bet">
+                <h3>How much is your bet (in $USD)?</h3>
+                <input class="input" id="bet-amt" type="number" min="1" placeholder="1">
+            </section>
+    
+        </div>
+
+
+        <!-- Section with the payout and clear buttons -->
+        <section class="buttons">
+            <button id="payout-btn">Payout</button>
+            <button id="clear-btn">Clear</button>
+        </section>
+
+        <!-- Payout section -->
+        <div class="payout-text">
+            <p id="payout"></p>
+        </div>
+        
+
+        <script src="./script.js"></script>
+    </body>
+</html>
