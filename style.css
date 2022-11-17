@@ -2,7 +2,8 @@ html,
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1485cf;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1,
@@ -32,13 +33,4 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-/* Media query */
-
-@media screen and (max-width: 500px) {
-    .container-main {
-        max-width: 450px;
-        margin: 10px;
-    }
 }
