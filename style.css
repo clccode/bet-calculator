@@ -33,3 +33,12 @@ button {
     flex-direction: row;
     justify-content: center;
 }
+
+/* Media query */
+
+@media screen and (max-width: 500px) {
+    body {
+        max-width: 450px;
+        margin: 10px;
+    }
+}
