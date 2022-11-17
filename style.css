@@ -37,7 +37,7 @@ button {
 /* Media query */
 
 @media screen and (max-width: 500px) {
-    body {
+    .container-main {
         max-width: 450px;
         margin: 10px;
     }
